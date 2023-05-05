@@ -29,9 +29,64 @@ header{
     width: 100%;
     height: 600px;
     background: #43C6AC;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f8ffae96, #43c6aca6), url(../img/portada.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f8ffae96, #43c6aca6), url(../img/portada.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #f8ffae96, #43c6aca6), url(../img/portada1.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f8ffae96, #43c6aca6), url(../img/portada1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+nav > a:hover{
+    background-color: #333;
+    color: white;
+    border-color: #333;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 70px;
+    color: white;
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: white;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/*about us*/
+
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
 }
